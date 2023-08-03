@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign In</title>
+  <script src="script.js"></script>
+  <style>
+    nav {
+      background-color: rgb(0, 0, 0);
+      padding: 10px;
+      display: flex;
+      justify-content: space-between; /* Align items with space between them */
+      align-items: center; /* Center items vertically */
+      height: 10vh; /* Set the height to 10% of the viewport height */
+    }
+    /* Styling for the whole page */
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; /* Align items at the top */
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: black;
+    }
+    
+    .tc {
+      color: #ccc;
+    }
+    
+    /* Basic styles for the form */
+    .form {
+      max-width: 250px;
+      padding: 50px;
+      background-color: rgb(37, 37, 37);
+    }
+
+    /* Styling for form labels and input fields */
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    /* Styling for the "Sign In" and "Forgot Password" buttons */
+    .btn {
+      background-color: #e50914;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .forgot-password {
+      text-align: center;
+      margin-top: 10px;
+    }
+    
+    .image {
+      height: 12vh; /* Set the height to 5% of the viewport height */
+      width: 15vw; /* Set the width to 10% of the viewport width */
+    }
+  </style>
+</head>
+<body>
+    
+  <nav><a href="index.html"><img class="image" src="/images/logo.png" alt=""></a></nav>
+  <div class="form">
+    <form>
+      <!-- Email input -->
+      <label class="tc" for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <!-- Password input -->
+      <label class="tc" for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <!-- Sign In button -->
+      <button type="submit" class="btn">Sign In</button>
+
+      <!-- Forgot Password option -->
+      <div class="forgot-password">
+        <a href="#">Forgot Password?</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

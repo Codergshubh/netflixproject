@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Join Now</title>
+  <style>
+    /* Styling for the navigation bar */
+    nav {
+      background-color: rgb(0, 0, 0);
+      padding: 10px;
+      display: flex;
+      justify-content: space-between; /* Align items with space between them */
+      align-items: center; /* Center items vertically */
+      height: 10vh; /* Set the height to 10% of the viewport height */
+    }
+
+    /* Styling for navigation links */
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    /* Basic styles for the form */
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 5%;
+      
+      border-radius: 4px;
+    }
+
+    /* Styling for form labels and input fields */
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="date"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    /* Styling for the "Sign Up" and "Clear" buttons */
+    .btn {
+      background-color: #d44545;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn-clear {
+      background-color: #ccc;
+    }
+    body{
+        background-color: black;
+        margin: 0;
+        padding: 0%;
+    }
+    form{
+        background-color:  rgb(53, 53, 53);;
+    }
+    .color{
+        color: #fff;
+    }
+    .image {
+        height: 12vh; /* Set the height to 200 pixels */
+        width: 15vw; /* Set the width to 300 pixels */
+      }
+  </style>
+   <script src="script.js"></script>
+</head>
+<body>
+  <nav>
+    <!-- Navigation links -->
+    <a href="index.html"><img class="image" src="/images/logo.png" alt=""></a>
+    
+  </nav>
+
+  <form id="signupForm">
+    <!-- Full Name input -->
+    <label class="color" for="fullName">Full Name</label>
+    <input type="text" id="fullName" name="fullName" required>
+  
+    <!-- Date of Birth input -->
+    <label class="color" for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob" required>
+  
+    <!-- Email input -->
+    <label class="color" for="email">Email</label>
+    <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+  
+    <!-- Phone Number input -->
+    <label class="color" for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required>
+  
+    <!-- Create New Password input -->
+    <label class="color" for="newPassword">Create New Password</label>
+    <input type="password" id="newPassword" name="newPassword" required>
+  
+    <!-- Verify Password input -->
+    <label class="color" for="verifyPassword">Verify Password</label>
+    <input type="password" id="verifyPassword" name="verifyPassword" required>
+  
+    <!-- Sign Up button -->
+    <button type="submit" class="btn">Sign Up</button>
+  
+    <!-- Clear button -->
+    <button type="button" class="btn btn-clear" onclick="clearForm()">Clear</button>
+  </form>
+  
+</body>
+</html>
+
